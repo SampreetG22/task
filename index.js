@@ -3,13 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
-app.use(cors(
-  {
-    origin: ["https://deploy-mern-1whq-vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-  }
-));
+app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
